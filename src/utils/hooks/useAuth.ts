@@ -66,7 +66,7 @@ function useAuth() {
           user.email = "";
           user.profilePicture = "";
           url = invitationToken
-            ? `${appConfig.notRegisteredEntryPath}?invitationToken=${invitationToken}`
+            ? `${appConfig.memberSignUpPath}?invitationToken=${invitationToken}`
             : appConfig.notRegisteredEntryPath;
         } else {
           dispatch(signInSuccess(token));
